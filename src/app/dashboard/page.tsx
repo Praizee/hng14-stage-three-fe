@@ -47,10 +47,11 @@ export default function DashboardPage() {
             type="button"
             data-testid="auth-logout-button"
             onClick={handleLogout}
-            className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 active:bg-slate-100"
+            className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 active:bg-slate-100"
           >
             <LogOut className="h-4 w-4" aria-hidden />
-            <span>Log out</span>
+            <span className="hidden sm:inline">Log out</span>
+            <span className="sr-only sm:hidden">Log out</span>
           </button>
         </header>
         <HabitList />
