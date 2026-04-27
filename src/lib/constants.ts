@@ -7,3 +7,5 @@ export const STORAGE_KEYS = {
 export const SPLASH_DURATION_MS = 1000;
 
 export const HABIT_NAME_MAX = 60;
+
+export const PASSWORD_MIN_LENGTH = 6;
